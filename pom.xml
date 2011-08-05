@@ -15,6 +15,11 @@
   		<artifactId>craftbukkit</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+    <dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>minecraft-server</artifactId>
+  		<version>1.7.3</version>
+  	</dependency>
   	<dependency>
   		<groupId>com.nijikokun.bukkit</groupId>
   		<artifactId>Permissions</artifactId>
@@ -25,6 +30,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <build>
+      <finalName>${artifactId}</finalName>
+
     <resources>
         <resource>
             <directory>src</directory>
